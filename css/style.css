@@ -11,20 +11,22 @@
 .header, .navigation, .main, .footer{
   width:100%;
 }
-.book, .news, .board, .favorite, .twiter
+.book, .news, .board, .favorite, .twiter{
+  width:100%;
+}
 .header{
-background-color: green;
-height:10vh; /* 눈에 보이는 높이의 10분의 1  */
+  background-color: green;
+  height:10vh; /* 눈에 보이는 높이의 10분의 1  */
 }
 .navigation{
-background-color: pink;
-height:20vh; 
+  background-color: pink;
+  height:20vh; 
 }
 .main{
-background-color: skyblue;
-height:60vh;
-display: flex;
-flex-flow: row wrap;
+  background-color: skyblue;
+  height:60vh;
+  display: flex;
+  flex-flow: row wrap;
 }
 .book{
   background-color: blueviolet;
@@ -45,7 +47,6 @@ flex-flow: row wrap;
 background-color: orange;
 height:10vh; 
 }
-
 
 /* Mobile Decvice */
 @media screen and (max-width: 1000px){
@@ -82,6 +83,4 @@ height:10vh;
   .twiter{
     width: 400px;
   }
-
-
 }
