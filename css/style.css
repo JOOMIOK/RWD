@@ -1,27 +1,17 @@
 @charset "utf-8";
 @import url(./normalize.css);  /* 외부파일 불러 오기  */
+
+/* All  Device */
 .container{
   background-color: silver;
   display: flex;
-  /* flex-direction: row;
-  flex-wrap:wrap ; */
   flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  height:100vh;
-  align-content: flex-start;
 }
-.container > *{
-   /* flex-grow : 0 ;
-   flex-shrink: 1;
-   flex-basis: auto;    */
-   flex: 0 1 auto; 
 
-}
 .header, .navigation, .main, .footer{
   width:100%;
-
 }
+.book, .news, .board, .favorite, .twiter
 .header{
 background-color: green;
 height:10vh; /* 눈에 보이는 높이의 10분의 1  */
@@ -32,10 +22,66 @@ height:20vh;
 }
 .main{
 background-color: skyblue;
-height:20vh;
+height:60vh;
+display: flex;
+flex-flow: row wrap;
+}
+.book{
+  background-color: blueviolet;
+}
+.news{
+   background-color: orangered; 
+}
+.board{
+  background-color: teal;
+}
+.favorite{
+  background-color: goldenrod;
+}
+.twiter{
+  background-color: aqua;
 }
 .footer{
 background-color: orange;
 height:10vh; 
-align-self: flex-end;
+}
+
+
+/* Mobile Decvice */
+@media screen and (max-width: 1000px){
+.favorite, .twiter{
+  width:50%;
+  order: -1;
+  }
+
+}
+/* Desktop Decvice */
+@media screen and (min-width:1000px){
+  .container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .header, .main{
+    width: 1000px;
+  }
+  .main{
+    justify-content: space-between;
+  }
+  .book{
+    width: 320px;
+  }
+  .news{
+    width: 660px;
+  }
+  .board{
+  width: 320px;
+  }
+  .favorite{
+    width: 240px;
+  }
+  .twiter{
+    width: 400px;
+  }
+
+
 }
