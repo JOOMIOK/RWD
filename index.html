@@ -1,61 +1,52 @@
 <!DOCTYPE html>
-<html lang="ko-kr">
+<html lang="ko-KR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>반응형 웹</title>
-  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
-   <!-- <link rel="stylesheet" href="./css/grid.css"> -->
-    <link rel="stylesheet" href="./css/style.css"> 
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="./css/style.css">
   <!-- <link rel="stylesheet" href="./css/float.css"> -->
+  <!-- <link rel="stylesheet" href="./css/grid.css"> -->
   <script src="./js/jquery.min.js" defer></script>
   <script src="./js/menu.js" defer></script>
-
 </head>
 <body>
   <div class="container">
     <header class="header">
-      <h1 class="logo"><a href="index.html"><img src="./images/rwd-logo.png" alt="web Cafe"></a></h1>
+      <h1 class="logo"><a href="./index.html"><img src="./images/rwd-logo.png" alt="Web Cafe"></a></h1>
       <ul class="member">
         <li><a href="#">로그인</a><span class="bar" aria-hidden="true">|</span></li>
         <li><a href="#">회원가입</a><span class="bar" aria-hidden="true">|</span></li>
         <li><a href="#">커뮤니티</a></li>
       </ul>
-      <form action="https://formspree.io/martlee21c@hanmail.net" method="POST" class="search">
+      <form action="https://formspree.io/seulbinim@gmail.com" method="POST" class="search">
         <fieldset>
           <legend>검색</legend>
-           <input type="search" aria-lable="검색어" name="search" required placeholder="검색어를 입력하세요.">
-           <button type="submit" class="btn-search">검색</button>
+          <input type="search" aria-label="검색어" name="search" required placeholder="검색어를 입력하세요.">
+          <button type="submit" class="btn-search">검색</button>
         </fieldset>
       </form>
-      <!-- <h1 class="logo">
-        <a href="index.html">
-            <picture>
-              <source srcsct="./images/webcafe-logo.png 1x, ./images/webcafe-logo@2x.png 2x"
-              >
-                <img src="./images/webcafe-logo.png" alt="">
-            </picture>
-        </logo></a> -->
     </header>
     <nav class="navigation">
-      <h2 class="ally-hidden">메인메뉴</h2>
-      <button class="btn-menubar" aria-label="메뉴열기">
+      <h2 class="a11y-hidden">메인 메뉴</h2>
+      <button class="btn-menubar" aria-label="메뉴 열기">
         <span class="menubar menubar-top"></span>
         <span class="menubar menubar-middle"></span>
         <span class="menubar menubar-bottom"></span>
       </button>
       <ul class="menu">
         <li class="menu-list">
-          <span class="menu-item">HTML에 대해</span>
+          <a href="#" class="menu-item">HTML에 대해</a>
           <ul class="sub-menu">
-            <li><a href="http://www.multicampus.co.kr/">HTML5 소개</a></li>
+            <li><a href="#">HTML5 소개</a></li>
             <li><a href="#">레퍼런스 소개</a></li>
             <li><a href="#">활용 예제</a></li>
           </ul>
-        </li> 
+        </li>
         <li class="menu-list">
-          <span class="menu-item">CSS에 대해</span>
+          <a href="#" class="menu-item">CSS에 대해</a>
           <ul class="sub-menu">
             <li><a href="#">CSS 소개</a></li>
             <li><a href="#">CSS2 VS CSS3</a></li>
@@ -63,7 +54,7 @@
           </ul>
         </li>
         <li class="menu-list">
-          <span class="menu-item">웹표준/웹접근성</span>
+          <a href="#" class="menu-item">웹표준/웹접근성</a>
           <ul class="sub-menu">
             <li><a href="#">웹표준 이란?</a></li>
             <li><a href="#">웹접근성의 개요</a></li>
@@ -71,7 +62,7 @@
           </ul>
         </li>
         <li class="menu-list">
-          <span class="menu-item">묻고 답하기</span>
+          <a href="#" class="menu-item">묻고 답하기</a>
           <ul class="sub-menu">
             <li><a href="#">묻고 답하기</a></li>
             <li><a href="#">FAQ</a></li>
@@ -79,18 +70,18 @@
           </ul>
         </li>
         <li class="menu-list">
-          <span class="menu-item">자료실</span>
+          <a href="#" class="menu-item">자료실</a>
           <ul class="sub-menu">
             <li><a href="#">공개 자료실</a></li>
             <li><a href="#">이미지 자료실</a></li>
             <li><a href="#">예제 자료실</a></li>
           </ul>
-        </li> 
+        </li>
       </ul>
     </nav>
     <main class="main">
-      <section class="recommend-book">
-        <h2 class="book main-section-heading">
+      <section class="book">
+        <h2 class="book-heading ir">
           추천 서적
           <span class="en-block point-color-green">
             Recommend Book
@@ -98,7 +89,7 @@
         </h2>
         <figure class="book-cover">
           <img
-            class="rwd-img"
+            class="responsive"
             src="images/book_rwd.jpg"
             alt=""
             aria-labelledby="book-cover-caption"
@@ -109,7 +100,7 @@
         </figure>
         <dl class="book-detail">
           <dt>저자</dt>
-          <dd>김데레사</ddlass="recommend-book-author-name">
+          <dd>김데레사</dd>
           <dt class="a11y-hidden">평점</dt>
           <dd class="book-grade" aria-label="5점 만점에 4점">
             <span aria-hidden="true">★★★★☆</span>
@@ -122,7 +113,7 @@
         </p>
       </section>
       <section class="news">
-        <h2 class="news-heading ir">
+        <h2 class="news-heading ir ir-news">
           새소식 <span class="en-block point-color-yellow">WebCafe News</span>
         </h2>
         <figure class="news-video-container">
@@ -158,9 +149,10 @@
       </section>
       <section class="board">게시판</section>
       <section class="favorite">인기사이트</section>
-      <article class="twiter">트위터</article>
+      <article class="twitter">트위터</article>
     </main>
     <footer class="footer">푸터</footer>
   </div>
+  
 </body>
 </html>
