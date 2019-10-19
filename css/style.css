@@ -200,7 +200,37 @@ width: 100%;
   display: block;
   text-align: right;
 }
+/* 공통 게시판 */
+.board{
+  position: relative;
+}
+.board-list{
+  list-style: none;
+  padding-left: 1em;
+}
+.board-list li{
+  margin-top:0.5em ;
+  display: flex;
+  align-items:center;
+}
+.board-list li::before{
 
+}
+.board-list li > :nth-child(1){     /*  게시판 글 불러 올때 오버되는 글자 감춤   */
+  flex: 1 0 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+.board-list li > :nth-child(2){
+
+}
+.board-more{
+position: absolute;
+top:1em;
+right: 0;
+
+}
 /* 공통 인기사이트 */
 
 /* 공통 트위터 */
