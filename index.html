@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>반응형 웹</title>
   <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/fonts.css"><!--   폰트가 제일 상단 순서 중요 -->
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
   <!-- <link rel="stylesheet" href="./css/float.css"> -->
   <!-- <link rel="stylesheet" href="./css/grid.css"> -->
@@ -168,30 +170,61 @@
           </li>
         </ul>
         <a href="#" class="board-more" aria-labelledby="board" title="게시판으로 이동">
-          <span class="icon-plus point-color-brown" aria-hodden="true">더보기</span></a>
+          <span class="icon-plus point-color-brown" aria-hidden="true">더보기</span></a>
       </section>
       <section class="favorite">
         <h2 class="favorite-heading ir ir-favorite">
-          인기 사이트<span class="en-block point-color-orange">favorites site</span>
+          인기사이트<span class="en-block point-color-orange">Favorites Site</span>
         </h2>
         <ol class="favorite-list">
           <li>
-            <a href="http://ko.learnlayout.com/" target="_blank" title="새창으로 열립니다.">Learn CSS Layout<span class="icon-link-ext" aria-hidden="true"></span></a>
+            <a href="http://ko.learnlayout.com/" target="_blank" title="새창으로 열립니다.">Learn CSS Layout<span
+                class="icon-link-ext" aria-hidden="true"></span></a>
           </li>
           <li>
-            <a href="http://flexboxfroggy.com/" target="_blank" title="새창으로 열립니다.">Flexbox Froggy<span class="icon-link-ext" aria-hidden="true"></span></a>
+            <a href="http://flexboxfroggy.com/" target="_blank" title="새창으로 열립니다.">Flexbox Froggy<span
+                class="icon-link-ext" aria-hidden="true"></span></a>
           </li>
           <li>
-            <a href="http://cssgridgarden.com/" target="_blank" title="새창으로 열립니다.">CSS Grid Garden<span class="icon-link-ext" aria-hidden="true"></span></a>
+            <a href="http://cssgridgarden.com/" target="_blank" title="새창으로 열립니다.">CSS Grid Garden<span
+                class="icon-link-ext" aria-hidden="true"></span></a>
           </li>
           <li>
-            <a href="https://developer.mozilla.org/ko/" target="_blank" title="새창으로 열립니다.">MDN Web Docs<span class="icon-link-ext"  aria-hidden="true"></span></a>
+            <a href="https://developer.mozilla.org/ko/" target="_blank" title="새창으로 열립니다.">MDN Web Docs<span
+                class="icon-link-ext" aria-hidden="true"></span></a>
           </li>
         </ol>
       </section>
-      <article class="twitter">트위터</article>
+      <article class="twitter">
+        <h2 class="twitter-heading ir ir-twitter">
+          트위터<span class="en-block point-color-skyblue">WebCafe Twitter</span>
+        </h2>
+        <div class="twitter-content">
+          <dl class="twitter-user-info">
+            <dt class="ally-hidden">사용자 이름</dt>
+            <dd class="twitter-user-name">김데레사</dd>
+            <dt class="ally-hidden">사용자 아이디</dt>
+            <dd class="twitter-user-id"><a href="https://twitter.com/@naradesign">@seulbinim</a></dd>
+          </dl>
+          <figure class="twitter-user-profile">
+            <img src="./images/seulbinim.jpg" alt="" class="responsive">
+          </figure>
+          <p class="twitter-summary">웹표준 핵심 가이드북 개정판 출시 기념으로 세미나를 준비했습니다. 참석을 원하시는 분들은 트위터로 문의하시기 바랍니다.</p>
+          <time class="twitter-date icon-calendar" datetime="2019-10-20T10:49:17">2019.10.20</time>
+        </div>
+      </article>
     </main>
-    <footer class="footer">푸터</footer>
+    <footer class="footer">
+      <address class="address">
+        <span>서울시 마포구 상수동 123-12 한주빌딩 5층</span>
+        <span>전화: <a href="tel:022345678">02-234-5678</a></span>
+        <span>이메일:
+          <a href="mailto:seulbinim@gmail.com?subject=문의사항">seulbinim@gmail.com</a></span>
+      </address>
+      <small class="copyright">
+        Copyright since &copy; 2010 by Web Cafe CORPORATION ALL RIGHTS RESERVED.
+      </small>
+    </footer>
   </div>
 </body>
 
